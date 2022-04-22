@@ -1,0 +1,301 @@
+body{
+ font-family: Arial, Helvetica, sans-serif;
+text-rendering: auto;
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+/*background-image: url("bgindex.jpg");*/
+background: url('bgvideo.png');
+}
+.bgvideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -9999;
+}
+.ch{
+color: green;
+}
+#f{
+color: red;
+}
+.over{
+overflow: auto;
+}
+a{
+text-decoration: none;
+color: blue;
+}
+.block1 { 
+/*.коммент*/
+/* margin: auto; */
+width: 15em;
+border: 1px solid #333;
+box-shadow: 4px 4px 16px #222;
+padding: 8px 12px;
+background-image: linear-gradient(180deg, #fff, #ddd, #ccc);
+}
+.menu{
+display:block;
+padding-bottom:20px;
+padding-right:10px;
+padding-top:10px;
+padding-left:10px;
+text-decoration:none;
+position: relative;
+z-index: 100;
+background-color: rgba(164, 164, 164, 0.2);
+-webkit-transition: all 1s;
+-moz-transition: all 1s;
+-o-transition: all 1s;
+transition: all 1s;ut;
+}
+
+.menu-main {
+  list-style: none;
+  margin: 40px 0 5px;
+  padding: 25px 0 5px;
+  text-align: center;
+  background: white;
+  border-radius: 5px 5px 5px 5px;
+}
+.menu-main li {display: inline-block;}
+.menu-main li:after {
+  content: "|";
+  color: #606060;
+  display: inline-block;
+  vertical-align:top;
+}
+.menu-main li:last-child:after {content: none;}
+.menu-main a {
+  text-decoration: none;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  letter-spacing: 2px;
+  position: relative;
+  padding-bottom: 20px;
+  margin: 0 34px 0 30px;
+  font-size: 17px;
+  text-transform: uppercase;
+  display: inline-block;
+  transition: color .2s;
+}
+.menu-main a, .menu-main a:visited {color: #9d999d;}
+.menu-main a.current, .menu-main a:hover{color: #feb386;}
+.menu-main a:before,
+.menu-main a:after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  top: auto;
+  right: 50%;
+  bottom: -5px;
+  left: 50%;
+  background: #feb386;
+  transition: .8s;
+}
+.menu-main a:hover:before, .menu-main .current:before {left: 0;}
+.menu-main a:hover:after, .menu-main .current:after {right: 0;}   
+@media (max-width: 550px) {
+.menu-main {padding-top: 0;}
+.menu-main li {display: block;}
+.menu-main li:after {content: none;}
+.menu-main a {
+  padding: 25px 0 20px; 
+  margin: 0 30px;
+}
+}
+
+  .bulletsBlock:after {
+    content: "";
+    display: table;
+    clear: both;
+	float: center;
+}
+ 
+.bulletsBlock > div {
+    width: 100%;
+    float: center;
+    background: rgba(0,0,0,0.3);
+    margin-left:5%;
+    text-align: center;
+    position: relative;
+    padding-bottom: 31.7%;
+    cursor: pointer;
+    -webkit-transition:all 0.35s linear;
+    transition:all 0.35s linear;
+}
+ 
+.bulletsBlock > div:first-child {
+    margin-left:0;
+}
+ 
+/*Тень снизу у блока при наведении*/
+.bulletsBlock > div:hover {
+    -webkit-box-shadow: 0 35px 35px -35px #000000;
+    -moz-box-shadow: 0 35px 35px -35px #000000;
+    box-shadow: 0 35px 35px -35px #000000;
+}
+.titleBullet, .hideText {
+    position: absolute;
+    left:0;
+    bottom:0;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    color: #fff;
+    -webkit-transition:all 0.35s ease;
+    transition:all 0.35s ease;
+}
+ 
+.titleBullet {
+    line-height: 2.5em;
+    font-size: 2.1875em;
+    background:#3B3B3B;
+    z-index: 10;
+}
+ 
+.hideText {
+    line-height: 1.3em;
+    font-size: 1.25em;
+    padding: 1em 0;
+    background:#3B3B3B;
+    font-weight: 300;
+    z-index: 8;
+    height: 50px;
+    -webkit-transition:all 0.35s linear 0.2s;
+    transition:all 0.35s linear 0.2s;
+}
+ 
+/*Анимация при наведении видимого текстового блока*/
+.bulletsBlock > div:hover p.titleBullet{
+    bottom:80px;
+}
+ 
+/*Анимация при наведении скрытого текстового блока*/
+.bulletsBlock > div:hover p.hideText{
+    background:#454545;
+}
+.bullet-item span{
+	margin-top: 10px;
+    line-height: 1.5em;
+    font-size: 12.5em;
+    color:#fff;
+    position: absolute;
+    top:0;
+    left:0;
+    display: block;
+    width: 100%;
+    -webkit-transition:all 0.35s ease;
+    transition:all 0.35s ease;
+	
+}
+ 
+/*Анимация иконки при наведении - уменьшение и сдвиг вверх*/
+.bulletsBlock > div:hover span.iconBullet{
+    line-height: 1.35em;
+    font-size: 10.625em;
+    top:-2.7%;
+}
+
+.container {
+    padding: 16px;
+background-color: rgba(245, 255, 250, 0);
+  width: 40%;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.container:hover {
+    padding: 16px;
+	  transition: 2s;
+background-color: rgba(245, 255, 250, 0.8);
+border-radius: 10px 10px 10px 10px;
+}
+.container:not(:hover) {
+    padding: 16px;
+	  transition: 2s;
+background-color: rgba(245, 255, 250, 0);
+border-radius: 10px 10px 10px 10px;
+}
+
+input[type=text], input[type=password] {
+    width: 60%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+	border-radius: 10px 10px 10px 10px;
+}
+.inptext{
+	 width: 60%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+	border-radius: 10px 10px 10px 10px;
+}
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+.inptext:focus {
+	background-color: #ddd;
+    outline: none;
+}
+/* Overwrite default styles of hr */
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.registerbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    opacity: 0.9;
+	font-size: 14pt;
+	border-radius: 10px 10px 10px 10px;
+}
+.registerbtn_goindex {
+    background-color: white;
+    color: #606060;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 20%;
+    opacity: 0.9;
+	font-size: 10pt;
+	border-radius: 10px 10px 10px 10px;
+}
+.registerbtn:hover {
+    opacity: 1;
+}
+
+/* Add a blue text color to links */
+a {
+    color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+    background-color: #f1f1f1;
+	
+    text-align: center;
+}
+.leftside{
+float: left;
+}
+.rightside{
+float: right;
+}

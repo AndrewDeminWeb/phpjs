@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+ <title>Разработчик</title>
+</head>
+<body>
+<center><h1>РАЗРАБОТЧИК - ДЕМИН АНДРЕЙ 4ПКС-216</h1></center>
+ <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+  <script src="js/jquery.backgroundvideo.min.js"></script>
+
+  <script>
+    $(document).ready(function() {
+      var videobackground = new $.backgroundVideo($('body'), {
+        "align": "centerXY",
+        "width": 1280,
+        "height": 720,
+        "path": "video/",
+        "filename": "bg1",
+        "types": ["mp4","ogg","webm"],
+        "preload": true,
+        "autoplay": true,
+        "loop": true
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,153 @@
+body {
+margin: 0;
+padding: 0;
+}
+
+h1{
+  font-size: 4rem;
+}
+
+#nav{
+  color: white;
+font-family: "Monotype Corsiva";
+font-size: 25px;
+  width: 1920px;
+  height: 200px;
+    padding: 20px;
+  background: url('images/regheader.png') repeat-x;
+}
+
+#centr{
+  color: white;
+font-family: "Monotype Corsiva";
+font-size: 25px;
+  width:1920px;
+  height: 680;
+    background: url('images/regmain.png') repeat-x;
+}
+
+#navigazia{
+  padding: 16px;
+}
+
+#header {
+height: 200px;
+background: url('images/regheader.png') repeat-x;
+}
+
+#content {
+height: 300px;
+background-color: #B0E0E6;
+border: 1px solid #999;
+font-size: 12pt;
+}
+
+#niz {
+height: 200px;
+background: url('images/regfooter.png') repeat-x;
+text-align: center;
+font-size: 14pt;
+}
+
+.btn-oval {
+  display: inline-block;
+  box-sizing: border-box;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+
+  background-color: #466802;
+  border-radius: 35px;
+  border: 1px solid #2c4608;
+  box-shadow:
+      inset 0 2px 2px #081005,
+      inset 1px 0 3px #b2dc2d,
+      inset -1px 0 3px #081005,
+      inset 0 -2px 2px #081005,
+      0 0 3px rgba(0, 0, 0, 0.24);
+  position: relative;
+  outline: none;
+}
+.btn-oval:before {
+  content: "";
+  position: absolute;
+  background: #2c4608;
+  z-index: -1;
+  box-shadow: inset 0 1px 2px #bbb;
+}
+.btn-oval:hover {
+  background: linear-gradient(#b1ee62 , #65ad07);
+  box-shadow:
+    inset 0 1px 0 #355303,
+    inset 0 2px 0 #ceec87,
+    inset 0 3px 0 #c3e67c,
+    inset 0 5px 0 #bae475,
+    inset 1px 0 3px #b2dc2d,
+    inset -1px 0 3px #b2dc2d,
+    inset 0 -2px 2px #89d301,
+    0 0 3px rgba(0, 0, 0, 0.24);
+}
+.btn-oval:active {
+  background: linear-gradient(#83bb37, #599c02);
+  padding: 0.3px 0 0 0.3px;
+}
+.textovii{
+  display: inline-block;
+  box-sizing: border-box;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+
+  background-color: #466802;
+  border-radius: 35px;
+  border: 1px solid #2c4608;
+  box-shadow:
+      inset 0 2px 2px #081005,
+      inset 1px 0 3px #b2dc2d,
+      inset -1px 0 3px #081005,
+      inset 0 -2px 2px #081005,
+      0 0 3px rgba(0, 0, 0, 0.24);
+  position: relative;
+  outline: none;
+}
+.textovii:before {
+  content: "";
+  position: absolute;
+  background: #2c4608;
+  z-index: -1;
+  box-shadow: inset 0 1px 2px #bbb;
+}
+.textovii:hover {
+  background: linear-gradient(#b1ee62 , #65ad07);
+  box-shadow:
+    inset 0 1px 0 #355303,
+    inset 0 2px 0 #ceec87,
+    inset 0 3px 0 #c3e67c,
+    inset 0 5px 0 #bae475,
+    inset 1px 0 3px #b2dc2d,
+    inset -1px 0 3px #b2dc2d,
+    inset 0 -2px 2px #89d301,
+    0 0 3px rgba(0, 0, 0, 0.24);
+}
+.btn-oval:active {
+  background: linear-gradient(#83bb37, #599c02);
+  padding: 0.3px 0 0 0.3px;
+}
+#te{
+   display: inline-block; /* Строчно-блочный элемент */
+   position: relative; /* Относительное позиционирование */
+  }
+#te:hover::after {
+   content: attr(data-title); /* Выводим текст */
+   position: absolute; /* Абсолютное позиционирование */
+   left: 25%; top: 60%; /* Положение подсказки */
+
+   z-index: 1; /* Отображаем подсказку поверх других элементов */
+  }
+  input[type="text"] {
+
+  }
+.razmer{
+  width: 1920px;
+  height: 680px;
+}

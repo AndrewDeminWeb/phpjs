@@ -1,0 +1,59 @@
+﻿<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Рыцарь и изгои</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="stylesheet" href="css/app.css">
+   <link rel="stylesheet" href="css/app.css">
+  </head>
+  <body>
+    <div class="wrapper">
+		<div class="instructions">
+      <center>
+			<div> <b>A / ← </b> - <span class="red">влево</span> </div>
+			<div> <b>D / → </b> - <span class="red">вправо</span> </div>
+			<div> <b>W / ↑</b> - <span class="red">вверх</span> </div>
+			<div> <b>S / ‎↓</b> - <span class="red">вниз</span> </div>
+			<div> <b>Space</b> - <span class="red">Защита</span> </div>
+    </center>
+		</div>
+    <script type="text/javascript">
+       var x=prompt("Введите имя", "");
+       document.write('Ваше имя: '+x);
+    </script>
+
+		<div class="score">
+		<span style="color: red;">Ваш Счет: <span id="score"></span></span>
+		</div>
+    </div>
+
+    <div id="game-over-overlay">
+      </div>
+
+      <div id="game-over">
+        <h1>Игра закончена </h1>
+
+      <input type="button" id="play-again" value="Играть" onClick='location.href="index.html"'>
+               <script type="text/javascript">
+          document.write('Ваше имя: '+x);
+         </script>
+      </div>
+
+
+
+
+<center>
+<form name=MyForm>
+  <input name=stopwatch size=10 value="00:00:00.00" disabled>
+</form>
+</center>
+</script>
+    <script type="text/javascript" src="js/resources.js"></script>
+    <script type="text/javascript" src="js/input.js"></script>
+    <script type="text/javascript" src="js/sprite.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+        <script type="text/javascript" src="js/time.js"></script>
+  </body>
+</html>

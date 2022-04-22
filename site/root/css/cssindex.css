@@ -1,0 +1,158 @@
+body{
+font-family: actor, sans-serif;
+text-rendering: auto;
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+/*background-image: url("bgindex.jpg");*/
+background: url('bgvideo.png');
+}
+.bgvideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -9999;
+}
+.ch{
+color: green;
+}
+#f{
+color: red;
+}
+.over{
+overflow: auto;
+}
+a{
+text-decoration: none;
+color: blue;
+}
+.block1 { 
+/*.коммент*/
+/* margin: auto; */
+width: 15em;
+border: 1px solid #333;
+box-shadow: 4px 4px 16px #222;
+padding: 8px 12px;
+background-image: linear-gradient(180deg, #fff, #ddd, #ccc);
+}
+.menu{
+display:block;
+padding-bottom:20px;
+padding-right:10px;
+padding-top:10px;
+padding-left:10px;
+text-decoration:none;
+position: relative;
+z-index: 100;
+background-color: rgba(164, 164, 164, 0.2);
+-webkit-transition: all 1s;
+-moz-transition: all 1s;
+-o-transition: all 1s;
+transition: all 1s;ut;
+}
+
+.menu-main {
+  list-style: none;
+  margin: 40px 0 5px;
+  padding: 25px 0 5px;
+  text-align: center;
+  background: white;
+  border-radius: 5px 5px 5px 5px;
+}
+.menu-main li {display: inline-block;}
+.menu-main li:after {
+  content: "|";
+  color: #606060;
+  display: inline-block;
+  vertical-align:top;
+}
+.menu-main li:last-child:after {content: none;}
+.menu-main a {
+  text-decoration: none;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  letter-spacing: 2px;
+  position: relative;
+  padding-bottom: 20px;
+  margin: 0 34px 0 30px;
+  font-size: 17px;
+  text-transform: uppercase;
+  display: inline-block;
+  transition: color .2s;
+}
+.menu-main a, .menu-main a:visited {color: #9d999d;}
+.menu-main a.current, .menu-main a:hover{color: #feb386;}
+.menu-main a:before,
+.menu-main a:after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  top: auto;
+  right: 50%;
+  bottom: -5px;
+  left: 50%;
+  background: #feb386;
+  transition: .8s;
+}
+.menu-main a:hover:before, .menu-main .current:before {left: 0;}
+.menu-main a:hover:after, .menu-main .current:after {right: 0;}   
+@media (max-width: 550px) {
+.menu-main {padding-top: 0;}
+.menu-main li {display: block;}
+.menu-main li:after {content: none;}
+.menu-main a {
+  padding: 25px 0 20px; 
+  margin: 0 30px;
+}
+}
+
+
+#container { 
+width:810px; 
+height:300px; 
+line-height:15px;
+}
+.img { 
+width:300px; 
+height:150px; 
+padding:10px; 
+float:left;
+}
+.content { 
+width:450px; 
+height:150px; 
+color:#333; 
+margin-left:10px; 
+padding:10px; 
+float:left; 
+}
+.date{ 
+width:150px; 
+height:15px; 
+color:#999;
+}
+.title{ 
+width:300px; 
+margin-top:10px; 
+font-weight:bold; 
+clear:both; 
+font-size:16px;
+}
+.text{ 
+width:100%; 
+height:75px; 
+margin-top:10px; 
+font-size:14px; 
+overflow:hidden;
+}
+.next{
+width:120px; 
+margin-top:10px; 
+clear:both; 
+font-weight:bold;}
+.next b{
+color:#F93;
+}
